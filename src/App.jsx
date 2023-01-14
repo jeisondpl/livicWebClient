@@ -4,7 +4,9 @@ import routes from "@/routes";
 
 function App() {
   return (
-    <HashRouter>
+    // <HashRouter>
+
+    <>
       <div className="container absolute left-2/4 z-10 mx-auto -translate-x-2/4 p-4">
         <Navbar routes={routes} />
       </div>
@@ -16,7 +18,8 @@ function App() {
         <Route path="*" element={<Navigate to="/home" replace />} />
         <Route path="/sign-in" element={<Navigate to="/sign-in" replace />} />
       </Routes>
-    </HashRouter>
+    </>
+    // </HashRouter>
   );
 }
 
