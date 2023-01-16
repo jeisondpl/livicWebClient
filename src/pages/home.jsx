@@ -20,7 +20,7 @@ export function Home() {
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.jpg')] bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-[url('/img/lina.jpg')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
@@ -86,14 +86,17 @@ export function Home() {
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg shadow-gray-500/10">
-                <CardHeader className="relative h-56">
-                  <img
+                {/* <CardHeader className="relative h-56"> */}
+                  {/* <img
                     alt="Card Image"
                     src="/img/reserva.jpg"
                     className="h-full w-full"
-                  />
-                </CardHeader>
-                <CardBody>
+                  /> */}
+                  <video width="750" height="500" controls>
+                    <source src="./img/830.mp4" type="video/mp4" />
+                  </video>
+                {/* </CardHeader> */}
+                {/* <CardBody>
                   <Typography
                     variant="h5"
                     color="blue-gray"
@@ -108,7 +111,7 @@ export function Home() {
                     que busques de un buen Hotel en nuestro Hotel lo hallarás
                     sin dudar.
                   </Typography>
-                </CardBody>
+                </CardBody> */}
               </Card>
             </div>
           </div>
