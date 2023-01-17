@@ -74,7 +74,8 @@ export function Home() {
               className=" W- h- "
             />
           </section>
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-2 ">
+          <div className="grid min-[320px]:grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
+            
             <div className="flex flex-wrap items-center">
               <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
                 <Typography variant="h1" color="white" className="mb-6">
@@ -87,8 +88,7 @@ export function Home() {
             </div>
 
             <div className="flex flex-wrap items-center">
-              <div className="ml-auto mr-auto w-full px-4 text-right lg:w-8/12">
-              
+              <div className="ml-auto mr-auto w-full px-4 max-[500px]:text-right lg:w-8/12 min-[500px]:text-center">
                 <Typography variant="lead" color="white" className="opacity-80">
                   RESERVA DEL MAR se encuentra situado en la hermosa ciudad de
                   Santa Marta, Colombia, frente al mar caribe colombiano, es un
@@ -98,10 +98,10 @@ export function Home() {
                 </Typography>
               </div>
             </div>
+
           </div>
         </div>
       </div>
-
       <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 ">
@@ -111,15 +111,15 @@ export function Home() {
           </div>
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+              {/* <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
                 <UsersIcon className="h-6 w-6 text-blue-gray-900" />
-              </div>
+              </div> */}
               <Typography
                 variant="h3"
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Trabajar con nosotros es un placer
+                Apto 831
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
                 La mejor estancia de tus vacaciones soñadas será nuestro Hotel,
@@ -140,32 +140,92 @@ export function Home() {
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg shadow-gray-500/10">
-                {/* <CardHeader className="relative h-56"> */}
-                {/* <img
+                <CardHeader className="h-100 relative">
+                  {/* <img
                     alt="Card Image"
                     src="/img/reserva.jpg"
                     className="h-full w-full"
                   /> */}
-                <video width="750" height="500" controls>
-                  <source src="./img/830.mp4" type="video/mp4" />
-                </video>
-                {/* </CardHeader> */}
-                {/* <CardBody>
+                  <video width="750" height="500" controls>
+                    <source src="./img/830.mp4" type="video/mp4" />
+                  </video>
+                </CardHeader>
+                <CardBody>
                   <Typography
                     variant="h5"
                     color="blue-gray"
                     className="mb-3 font-bold"
                   >
-                    Servicios de primer nivel
+                    Apto 831
                   </Typography>
-                  <Typography className="font-normal text-blue-gray-500">
+                  {/* <Typography className="font-normal text-blue-gray-500">
                     Las vacaciones de tus sueños merecen que te alojes en
                     nuestro Hotel de ensueño Vive tus sueños en nuestro Hotel de
                     ensueño Comodidad, calidez, calidad, disfrute de verdad… Lo
                     que busques de un buen Hotel en nuestro Hotel lo hallarás
                     sin dudar.
+                  </Typography> */}
+                </CardBody>
+              </Card>
+            </div>
+          </div>
+          <div className="mt-32 flex flex-wrap items-center">
+            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+              {/* <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+                <UsersIcon className="h-6 w-6 text-blue-gray-900" />
+              </div> */}
+              <Typography
+                variant="h3"
+                className="mb-3 font-bold"
+                color="blue-gray"
+              >
+                Apto 1039
+              </Typography>
+              <Typography className="mb-8 font-normal text-blue-gray-500">
+                La mejor estancia de tus vacaciones soñadas será nuestro Hotel,
+                en el que sin dudas disfrutarás más que nada a más no poder. No
+                es un Hotel y ya, es el lugar perfecto para reír, disfrutar y
+                soñar.
+                <br />
+                <br />
+                ¿Buscas un alojamiento cómodo? ¿Qué te brinde una estadía alegre
+                y divertida? ¿Buscas una experiencia única? Todo eso y más en un
+                sólo lugar: Nuestro Hotel sin igual. Aquí vivirás la estancia
+                más increíble, mágica, memorable, irrepetible, sin igual… Una
+                experiencia que nunca vas a olvidar.
+              </Typography>
+              <Link to={"/profile"}>
+                <Button variant="outlined">Saber mas</Button>
+              </Link>
+            </div>
+            <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
+              <Card className="shadow-lg shadow-gray-500/10">
+                <CardHeader className="h-100 relative">
+                  {/* <img
+                    alt="Card Image"
+                    src="/img/reserva.jpg"
+                    className="h-full w-full"
+                  /> */}
+                  <video width="750" height="500" controls>
+                    <source src="./img/830.mp4" type="video/mp4" />
+                  </video>
+                </CardHeader>
+                <CardBody>
+                  <Typography
+                    variant="h5"
+                    color="blue-gray"
+                    className="mb-3 font-bold"
+                  >
+                    Apto 1039
                   </Typography>
-                </CardBody> */}
+                  {/* <Typography className="font-normal text-blue-gray-500">
+                    Las vacaciones de tus sueños merecen que te alojes en
+                    nuestro Hotel de ensueño Vive tus sueños en nuestro Hotel de
+                    ensueño Comodidad, calidez, calidad, disfrute de verdad… Lo
+                    que busques de un buen Hotel en nuestro Hotel lo hallarás
+                    sin dudar.
+                  </Typography> */}
+                </CardBody>
               </Card>
             </div>
           </div>
@@ -237,7 +297,7 @@ export function Home() {
               <Input variant="standard" size="lg" label="Correo electronico" />
             </div>
             <Textarea variant="standard" size="lg" label="Mensaje" rows={8} />
-            <Button variant="gradient" size="lg" className="mt-8">
+            <Button variant="outlined" size="lg" className="mt-8">
               Enviar
             </Button>
           </form>

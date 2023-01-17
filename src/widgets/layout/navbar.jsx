@@ -76,6 +76,7 @@ export function Navbar({ brandName, routes, action }) {
             className: "hidden lg:inline-block",
           })}
         </div>
+
         <IconButton
           variant="text"
           size="sm"
@@ -109,9 +110,15 @@ Navbar.defaultProps = {
   brandName: "Material Tailwind React",
   action: (
     <Link to={"/sign-in"}>
-      <Button variant="outlined" size="sm" fullWidth color="white" style={{
-        borderRadius: "10px",
-      }}>
+      <Button
+        variant="outlined"
+        size="sm"
+        fullWidth
+        color="white"
+        style={{
+          borderRadius: "10px",
+        }}
+      >
         Reservar ahora
       </Button>
     </Link>
