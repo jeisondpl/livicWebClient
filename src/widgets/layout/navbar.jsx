@@ -65,15 +65,11 @@ export function Navbar({ brandName, routes, action }) {
   return (
     <MTNavbar color="transparent" className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
-        <Link to="/">
+        {/* <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
-            <img
-              alt="Card Image"
-              src="/img/logo_reserva_livic.png"
-              className="h-full w-full"
-            />
+            <img alt="Card Image" src="/img/vn.png" className="h-full w-full" />
           </Typography>
-        </Link>
+        </Link> */}
         <div className="hidden lg:block">{navList}</div>
         <div className="hidden gap-2 lg:flex">
           {React.cloneElement(action, {
@@ -113,8 +109,10 @@ Navbar.defaultProps = {
   brandName: "Material Tailwind React",
   action: (
     <Link to={"/sign-in"}>
-      <Button variant="gradient" size="sm" fullWidth>
-      Reservar ahora
+      <Button variant="outlined" size="sm" fullWidth color="white" style={{
+        borderRadius: "10px",
+      }}>
+        Reservar ahora
       </Button>
     </Link>
   ),

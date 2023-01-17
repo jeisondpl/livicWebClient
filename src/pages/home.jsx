@@ -63,7 +63,44 @@ const Header = () => {
 export function Home() {
   return (
     <>
-      <Header />
+      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+        <div className="absolute top-0 h-full w-full bg-[url('/img/mar.jpg')] bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-black/50 bg-cover bg-center" />
+        <div className="max-w-8xl container relative mx-auto">
+          <section class="hero container mx-auto flex max-w-screen-lg justify-center pb-10">
+            <img
+              alt="Card Image"
+              src="/img/logo_reserva_livic.png"
+              className=" W- h- "
+            />
+          </section>
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-2 ">
+            <div className="flex flex-wrap items-center">
+              <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
+                <Typography variant="h1" color="white" className="mb-6">
+                  Apartamentos Santa Marta
+                </Typography>
+                <Typography variant="lead" color="white" className="opacity-80">
+                  Disfrute pleno y comodidad sin igual. Todo en un mismo lugar.
+                </Typography>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center">
+              <div className="ml-auto mr-auto w-full px-4 text-right lg:w-8/12">
+              
+                <Typography variant="lead" color="white" className="opacity-80">
+                  RESERVA DEL MAR se encuentra situado en la hermosa ciudad de
+                  Santa Marta, Colombia, frente al mar caribe colombiano, es un
+                  nuevo y moderno complejo de apartamentos, estos poseen todo lo
+                  necesario para que sus días sean placenteros durante su
+                  estancia
+                </Typography>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
