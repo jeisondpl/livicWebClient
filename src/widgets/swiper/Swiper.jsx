@@ -26,27 +26,15 @@ export default function SliderComponent({ icon }) {
         modules={[Autoplay, Pagination, Navigation]}
         className="rounded-2xl"
       >
-        <SwiperSlide>
-          <img
-            className="h-50 w-full object-fill"
-            src={icon[0]}
-            alt="image slide 1"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="h-50 w-full object-fill"
-            src={icon[1]}
-            alt="image slide 2"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="h-50 w-full object-fill"
-            src={icon[2]}
-            alt="image slide 3"
-          />
-        </SwiperSlide>
+        {icon.map((item, index) => (
+          <SwiperSlide key={index}>
+            <img
+              className="h-50 w-full object-fill"
+              src={item}
+              alt={"image slide 1" + index}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

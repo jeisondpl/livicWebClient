@@ -45,14 +45,14 @@ export const featuresData2 = [
       "/img/apartament/IMG_5.jpg",
     ],
   },
-  {
-    title: "img3",
-    icon: [
-      "/img/apartament/IMG_6.jpg",
-      "/img/apartament/IMG_7.jpg",
-      "/img/apartament/IMG_8.jpg",
-    ],
-  },
+  // {
+  //   title: "img3",
+  //   icon: [
+  //     "/img/apartament/IMG_6.jpg",
+  //     "/img/apartament/IMG_7.jpg",
+  //     "/img/apartament/IMG_8.jpg",
+  //   ],
+  // },
 ];
 
 export default featuresData;

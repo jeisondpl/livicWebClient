@@ -22,7 +22,7 @@ export const routes = [
   },
   {
     icon: ArrowRightOnRectangleIcon,
-    name: "Iniciar Sesión",
+    name: "Reservar ahora",
     path: "/sign-in",
     element: <SignIn />,
   },

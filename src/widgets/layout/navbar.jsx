@@ -69,7 +69,7 @@ export function Navbar({ brandName, routes, action }) {
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
             <img
               alt="Card Image"
-              src="/img/logoreserva.png"
+              src="/img/logo_reserva_livic.png"
               className="h-full w-full"
             />
           </Typography>
@@ -114,7 +114,7 @@ Navbar.defaultProps = {
   action: (
     <Link to={"/sign-in"}>
       <Button variant="gradient" size="sm" fullWidth>
-        Iniciar sesión
+      Reservar ahora
       </Button>
     </Link>
   ),

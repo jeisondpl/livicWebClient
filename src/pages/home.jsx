@@ -16,41 +16,58 @@ import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard, FeatureCardImage } from "@/widgets/cards";
 import { featuresData, teamData, contactData, featuresData2 } from "@/data";
 
+const Header = () => {
+  const data = [
+    {
+      id: 1,
+      data: () => (
+        <>
+          <div className="absolute top-0 h-full w-full bg-[url('/img/lina.jpg')] bg-cover bg-center" />
+          <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
+          <div className="max-w-8xl container relative mx-auto">
+            <div className="flex flex-wrap items-center">
+              {/* <section class="hero container mx-auto flex max-w-screen-lg justify-center pb-10">
+          <img
+            alt="Card Image"
+            src="/img/livic/livic3.png"
+            className=" W-20 h-20 "
+          />
+        </section> */}
+
+              <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
+                <Typography
+                  variant="h1"
+                  color="white"
+                  className="mb-6 font-black"
+                >
+                  Apartamentos santa marta
+                </Typography>
+                <Typography variant="lead" color="white" className="opacity-80">
+                  Disfrute pleno y comodidad sin igual. Todo en un mismo lugar.
+                </Typography>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+    },
+  ];
+
+  return (
+    <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+      {data[0].data()}
+    </div>
+  );
+};
+
 export function Home() {
   return (
     <>
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/lina.jpg')] bg-cover bg-center" />
-        <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
-        <div className="max-w-8xl container relative mx-auto">
-          <div className="flex flex-wrap items-center">
-            <section class="hero container mx-auto flex max-w-screen-lg justify-center pb-10">
-              <img
-                alt="Card Image"
-                src="/img/livic/livic3.png"
-                className=" W-20 h-20 "
-              />
-            </section>
+      <Header />
 
-            <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
-              <Typography
-                variant="h1"
-                color="white"
-                className="mb-6 font-black"
-              >
-                Santa Marta
-              </Typography>
-              <Typography variant="lead" color="white" className="opacity-80">
-                Hospedándote en el Complejo de Apartamentos Reserva del Mar Apto
-                609 | Playa Salguero | Santa Marta
-              </Typography>
-            </div>
-          </div>
-        </div>
-      </div>
       <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 ">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 ">
             {featuresData2.map(({ title, icon }) => (
               <FeatureCardImage key={title} title={title} icon={icon} />
             ))}
@@ -87,14 +104,14 @@ export function Home() {
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg shadow-gray-500/10">
                 {/* <CardHeader className="relative h-56"> */}
-                  {/* <img
+                {/* <img
                     alt="Card Image"
                     src="/img/reserva.jpg"
                     className="h-full w-full"
                   /> */}
-                  <video width="750" height="500" controls>
-                    <source src="./img/830.mp4" type="video/mp4" />
-                  </video>
+                <video width="750" height="500" controls>
+                  <source src="./img/830.mp4" type="video/mp4" />
+                </video>
                 {/* </CardHeader> */}
                 {/* <CardBody>
                   <Typography
