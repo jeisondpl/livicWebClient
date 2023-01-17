@@ -74,8 +74,7 @@ export function Home() {
               className=" W- h- "
             />
           </section>
-          <div className="grid min-[320px]:grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
-            
+          <div className="min-[320px]:grid-cols-1 grid gap-6 md:grid-cols-2 lg:grid-cols-2">
             <div className="flex flex-wrap items-center">
               <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
                 <Typography variant="h1" color="white" className="mb-6">
@@ -87,8 +86,8 @@ export function Home() {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center">
-              <div className="ml-auto mr-auto w-full px-4 max-[500px]:text-right lg:w-8/12 min-[500px]:text-center">
+            <div className="flex flex-wrap items-center mb-500">
+              <div className="max-[500px]:text-right min-[500px]:text-center ml-auto mr-auto w-full px-4 lg:w-8/12">
                 <Typography variant="lead" color="white" className="opacity-80">
                   RESERVA DEL MAR se encuentra situado en la hermosa ciudad de
                   Santa Marta, Colombia, frente al mar caribe colombiano, es un
@@ -98,16 +97,17 @@ export function Home() {
                 </Typography>
               </div>
             </div>
-
           </div>
         </div>
       </div>
       <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 ">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-4">
+            <div></div>
             {featuresData2.map(({ title, icon }) => (
               <FeatureCardImage key={title} title={title} icon={icon} />
             ))}
+            <div></div>
           </div>
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
@@ -292,12 +292,12 @@ export function Home() {
             inmediatamente
           </PageTitle>
           <form className="mx-auto mt-12 max-w-3xl text-center">
-            <div className="mb-8 flex gap-8">
+            <div className="mx-auto grid mb-16 grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3" >
               <Input variant="standard" size="lg" label="Nombre" />
               <Input variant="standard" size="lg" label="Correo electronico" />
             </div>
             <Textarea variant="standard" size="lg" label="Mensaje" rows={8} />
-            <Button variant="outlined" size="lg" className="mt-8">
+            <Button variant="outlined" className="mt-8">
               Enviar
             </Button>
           </form>
